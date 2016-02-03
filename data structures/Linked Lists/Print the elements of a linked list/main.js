@@ -24,9 +24,12 @@ List.prototype.addList = function(data) {
  	this.end.data = data;
 }
 
+var testcase = prompt("Enter test case (int): ").split(" ").map(function(x) {
+	return parseInt(x);
+});
 list1 = new List();
 for (var i = 0; i < 5; i++) {
-	list1.addList(i);
+	list1.addList(testcase[i]);
 }
 
 console.log(list1);
