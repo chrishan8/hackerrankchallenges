@@ -29,7 +29,6 @@ for (var i = 0; i <= testcase.length; i++) {
 var input = parseInt(prompt("Enter data for new node: "));
 var position = parseInt(prompt("Enter position: "));
 var currentnode = list1.start;
-console.log(currentnode.data);
 if (isNaN(currentnode.data)) {
 	currentnode.data = input;
 }
